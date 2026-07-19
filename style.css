@@ -1,0 +1,378 @@
+body {
+  background-color: #0d0015;
+  margin: 0;
+}
+.container {
+  background-color: #0d0015;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 90%;
+  max-width: 1200px;
+  gap: 40px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.name {
+  font-size: 1.5rem;
+  font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.welcome {
+  color: white;
+  font-size: 3.5rem;
+  font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 40rem;
+}
+.dev {
+  font-size: 2rem;
+}
+.para {
+  color: white;
+  max-width: 550px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 0.08rem;
+}
+.nav {
+  display: flex;
+  padding: 20px 50px;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0d0015;
+}
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pp {
+  height: 20rem;
+  border-radius: 50%;
+ 
+}
+.pp{
+ transition: 1s ease;
+  cursor: pointer;
+}
+
+.pp:hover{
+  transform: scale(1.2);
+}
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 40rem;
+}
+.name {
+  margin-right: auto;
+}
+.navlink {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  word-spacing: 1rem;
+  font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 0.08rem;
+}
+
+.skill h1 {
+  justify-self: center;
+}
+.lower {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+.gra {
+  background: linear-gradient(90deg, #a855f7 0%, #ec4899 55%, #f97316 100%);
+  font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.project{
+  display: flex;
+  align-items: center;
+   justify-content: center;
+   flex-direction: column;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 0.08rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.pro{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+
+ 
+
+}
+.Pleft {
+  flex: 1;
+}
+.Pright{
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+
+}
+.Pright img{
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.Pright img:hover{
+  transform: scale(1.05);
+}
+.heading h1{
+  text-align: center;
+
+}
+.heading{
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+#skill{
+  scroll-margin-top: 100px;
+}
+#project{
+  scroll-margin-top: 100px;
+}
+#contact{
+  scroll-margin-top: 100px;
+}
+.contact{
+   display: flex;
+  align-items: center;
+   justify-content: center;
+   flex-direction: column;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 0.08rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.role{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+
+}
+.role.para{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.Proimg{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 350px;
+}
+.footer{
+  width: 100%;
+  background-color: #0d0015;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #333;
+}
+@media (max-width: 768px) {
+
+  .container{
+    width: 95%;
+    padding: 15px;
+    gap: 60px;
+  }
+
+  /* Navbar */
+  .nav{
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .navlink{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    font-size: 0.9rem;
+    word-spacing: 0;
+    letter-spacing: 1px;
+  }
+
+  .name{
+    margin: 0;
+  }
+
+  /* Hero Section */
+  .hero{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .left,
+  .right{
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .welcome{
+    font-size: 2.2rem;
+  }
+
+  .dev{
+    font-size: 1.4rem;
+  }
+
+  .pp{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .para{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* Skills */
+
+  .skill{
+    text-align: center;
+  }
+
+  .lower{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  ul{
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  /* Projects */
+
+  .project{
+    width: 100%;
+  }
+
+  .pro{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .Pleft,
+  .Pright{
+    width: 100%;
+  }
+
+  .Pleft{
+    text-align: center;
+  }
+
+  .Pleft ul{
+    display: inline-block;
+    text-align: left;
+  }
+
+  .Pright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .Pright img{
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .heading{
+    margin-bottom: 20px;
+  }
+
+  .role{
+    margin-top: 30px;
+  }
+
+  /* Contact */
+
+  .contact{
+    text-align: center;
+  }
+
+  .contact h2{
+    font-size: 1rem;
+  }
+
+  /* Footer */
+
+  .footer{
+    position: static;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+  }
+}
